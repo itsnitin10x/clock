@@ -20,7 +20,7 @@ let minute = 22;
 let hour = 16;
 
 // start.addEventListener('click',startClock)
-// let startStop;
+let startStop;
 startStop = setInterval(myclock ,1000)
 
 
@@ -44,8 +44,9 @@ function myclock(){
 
 
 }
+let stop = document.querySelector('.stop');
 stop.addEventListener('click',stopClock);
 
 function stopClock(){
- clearInterval(startStopp);
+ clearInterval(startStop);
 }
